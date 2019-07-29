@@ -1,0 +1,6 @@
+<!ELEMENT stus (stu)+>
+<!ELEMENT stu (name,age,sex)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ATTLIST stu id ID #REQUIRED>

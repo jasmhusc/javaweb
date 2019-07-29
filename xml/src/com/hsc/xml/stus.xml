@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE stus SYSTEM "../dtd/stus.dtd">
+<stus>
+    <stu id="U1001">
+        <name>李白</name>
+        <age>26</age>
+        <sex>男</sex>
+    </stu>
+    <stu id="U1002">
+        <name>杜甫</name>
+        <age>24</age>
+        <sex>男</sex>
+    </stu>
+
+</stus>

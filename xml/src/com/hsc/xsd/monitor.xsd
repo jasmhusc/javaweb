@@ -1,0 +1,28 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.microsoft.com/monitor"
+        elementFormDefault="qualified">
+
+    <element name="monitor">
+        <complexType>
+            <sequence>
+                <element name="nickname" type="string">
+                    <simpleType>
+                        <restriction>
+                            <minLength value="3"/>
+                            <maxLength value="8"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="gender">
+                    <simpleType>
+                        <restriction>
+                            <enumeration value="male"/>
+                            <enumeration value="female"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
+

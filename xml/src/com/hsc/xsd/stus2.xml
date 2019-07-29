@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.hsc.org/stus"
+      xmlns:xs="http://www.microsoft.com/monitor"
+      xmlns:aa="http://www.microsoft.com/attribute"
+      xsi:schemaLocation="http://www.hsc.org/stus stus.xsd
+    http://www.microsoft.com/monitor monitor.xsd
+    http://www.microsoft.com/attribute attribute.xsd">
+    <stu id="10086">
+        <name>吴彦祖</name>
+        <age>30</age>
+        <gender>男</gender>
+        <address>香港</address>
+    </stu>
+    <!--扩展属性：class-->
+    <stu id="10087" aa:class="8">
+        <name>胡歌</name>
+        <age>31</age>
+        <gender>男</gender>
+        <address>台湾</address>
+    </stu>
+    <stu id="10098">
+        <name>范冰冰</name>
+        <age>29</age>
+        <gender>女</gender>
+        <address>中国</address>
+        <!--<star></star> 此元素没有声明，命名空间也没有引入相关约束-->
+        <xs:monitor>
+            <xs:nickname>范爷</xs:nickname>
+            <xs:gender>female</xs:gender>
+        </xs:monitor>
+    </stu>
+    <!--扩展标签-->
+    <xs:monitor>
+        <xs:nickname>StephenChow</xs:nickname>
+        <xs:gender>male</xs:gender>
+    </xs:monitor>
+</stus>

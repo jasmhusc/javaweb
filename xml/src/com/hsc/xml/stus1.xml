@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE stus [<!ELEMENT stus (stu)+>
+        <!ELEMENT stu (name,age,sex,address)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT sex (#PCDATA)>
+        <!ELEMENT address (#PCDATA)>
+        <!ATTLIST stu id CDATA #REQUIRED>]>
+<stus>
+    <stu id="10086">
+        <name>James Gosling</name>
+        <age>60</age>
+        <sex>Male</sex>
+        <address>American</address>
+    </stu>
+    <stu id="10087">
+        <name>胡歌</name>
+        <age>31</age>
+        <sex>女</sex>
+        <address>台湾</address>
+    </stu>
+
+</stus>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.hsc.com/contact"
+        elementFormDefault="qualified">
+
+        <element name="contactList">
+            <complexType>
+                <sequence>
+                    <element name="contact" maxOccurs="unbounded">
+                        <complexType>
+                            <sequence>
+                                <element name="name" type="string"></element>
+                                <element name="gender">
+                                    <simpleType>
+                                        <restriction>
+                                            <enumeration value="male"/>
+                                            <enumeration value="female"/>
+                                        </restriction>
+                                    </simpleType>
+                                </element>
+                                <element name="email">
+                                    <simpleType>
+                                        <restriction>
+                                            <pattern value="([A-z0-9_\-\.])+\@([A-z0-9_\-\.])+\.([A-z]{2,4})"/>
+                                        </restriction>
+                                    </simpleType>
+                                </element>
+                            </sequence>
+                            <attribute name="id" type="int" use="required"/>
+                            <attribute name="vip" type="boolean" use="optional"/>
+                        </complexType>
+                    </element>
+                </sequence>
+            </complexType>
+        </element>
+</schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE bookshelf SYSTEM  "../dtd/books.dtd">
+<bookshelf>
+    <book id="U1001" vip="true">
+        <name>西游记</name>
+        <author>吴承恩</author>
+        <date>1953</date>
+    </book>
+    <book id="U1002">
+        <name>三国演义</name>
+        <author>罗贯中</author>
+        <date>1920</date>
+    </book>
+
+</bookshelf>

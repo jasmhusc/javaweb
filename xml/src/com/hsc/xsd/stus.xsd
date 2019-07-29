@@ -1,0 +1,48 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.hsc.org/stus"
+elementFormDefault="qualified">
+
+    <element name="stus">
+        <complexType>
+            <sequence maxOccurs="unbounded">
+                <element name="stu">
+                    <complexType>
+                        <sequence>
+                            <!--基本元素，给一下type类型，或者给一下限定条件-->
+                            <element name="name" type="string"></element>
+                            <element name="age">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="0"></minInclusive>
+                                        <maxInclusive value="120"></maxInclusive>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="gender">
+                                <simpleType>
+                                    <restriction>
+                                        <!--<pattern value="男|女"></pattern>-->
+                                        <enumeration value="男"/>
+                                        <enumeration value="女"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="address" type="all"></element>
+                            <any minOccurs="0"/>
+                        </sequence>
+                        <!--属性标签attribute 必须给定：required-->
+                        <attribute name="id" type="string" use="required"/>
+                        <!--<anyAttribute> 元素使我们有能力通过未被 schema 规定的属性来扩展 XML 文档！
+                            所使用的属性需要在其他 schema 内声明-->
+                        <anyAttribute/>
+                    </complexType>
+                </element>
+                <!--<any> 元素使我们有能力通过未被 schema 规定的元素来拓展 XML 文档！
+                    所使用的元素需要在其他 schema 内声明-->
+                <any minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+</schema>

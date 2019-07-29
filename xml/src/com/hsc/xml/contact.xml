@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<contactList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.hsc.com/contact"
+         xsi:schemaLocation="http://www.hsc.com/contact ../xsd/contact.xsd">
+
+    <contact id="101" vip="true">
+        <name>潘金莲</name>
+        <gender>female</gender>
+        <email>panpan@shuihu.com</email>
+    </contact>
+    <contact id="102" vip="true">
+        <name>武松</name>
+        <gender>male</gender>
+        <email>wusong@shuihu.com</email>
+    </contact>
+    <contact id="103">
+        <name>武大郎</name>
+        <gender>male</gender>
+        <email>wuda@shuihu.com</email>
+    </contact>
+
+</contactList>

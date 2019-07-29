@@ -1,0 +1,7 @@
+<!ELEMENT bookshelf (book)+ >
+<!ELEMENT book (name,author,date)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST book id ID #REQUIRED>
+<!ATTLIST book vip CDATA #IMPLIED>
