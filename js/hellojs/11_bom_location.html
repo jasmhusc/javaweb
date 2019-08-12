@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Location地址栏</title>
+	</head>
+	<body>
+		<!--reload: 重新加载页面-->
+		<input type="button" value="刷新" onclick="location.reload()">
+		<script type="text/javascript">
+			// href属性: 地址栏内容
+			// 其实href可以省略
+			// 得到href
+			document.write(window.location.href + '<br/>');
+			document.write(window.location + '<br/>');
+			document.write(location + '<br/>');
+			
+			// 跳转网站,更改location的href
+			location.href = "03_mouseover_out.html";
+			
+			// 得到搜索内容: ？name=value
+			document.write(location.search + '<br/>');
+		</script>
+	</body>
+</html>

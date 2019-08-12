@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Js数组</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 创建方式1,无内容
+			var arr1 = new Array();
+			document.writeln(arr1 + "<br/>");
+			
+			// 创建数组2,无内容,但又分隔符'，'
+			var arr2 = new Array(5);
+			document.writeln(arr2 + "<br/>");
+			
+			// 创建数组3
+			var arr3 = new Array(11,22,33,44);
+			document.writeln(arr3 + "<br/>");
+			
+			// 创建方式4(推荐)
+			// 1.数组中元素的类型可以不同
+			var arr4 = [55, 'aa', true, 2.2, 11];
+			document.writeln(arr4 + "<br/>");
+			
+			// #### JS数组的特点
+			// 2.长度可以动态变化
+			// 3.数组中还有方法
+			var arr5 = [0,1,2,3,4];
+			// push 添加
+			arr5.push(5);
+			document.write(arr5+"<br/>");
+			// pop 删除
+			arr5.pop();
+			document.write(arr5+"<br/>");
+			// 修改
+			arr5[3] = 9;
+			document.write(arr5+"<br/>");
+			
+			// 反转
+			arr5.reverse();
+			document.write(arr5+"<br/>");
+			
+			// join,遍历数组中的每个元素,使用参数将元素拼接
+			var str = arr5.join("-");
+			document.write(str+"<br/>");
+			
+			var arr9 = ['z', 'Z', 'B', 'bb', 'ba', 'bc'];
+			arr9.sort();
+			document.write(arr9 + "<br/>"); // B,Z,ba,bb,bc,z 按照ASCII码值排序,如果第一个字母相同,在比较第二个
+			
+			
+			// sort: 排序
+			var arr8 = [100, 9, 46, 20];
+			arr8.sort();
+			document.write(arr8 + "<br/>"); // 100,20,46,9
+			// 注意:js排序时,如果数组中的内容是数字
+			// 先将数字转成字符串,在按照字符串的规则比较
+			//                                    49     57   52    50
+			// var arr8 = [100, 9, 46, 20];  ==> ["100", "9", "46", "20"]
+			// 按照第一个字母ASCII码值
+		</script>
+	</body>
+</html>

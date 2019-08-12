@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>span_div</title>
+		<style type="text/css">
+			span {
+				background-color: #1B6D85;
+				color: orangered;
+				font-family: "华文新魏";
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<!-- 
+		1、float:left
+		设置浮动，再设置text-align:center，内容即可居中。
+		通过设置float浮动，让span设置宽度生效，从而设置内容居中（text-align:center）属性生效
+		
+		2、display:block
+		让span形成块（独占一行），就像DIV一样，在设置内容居中css text-align:center。
+		
+		3、display:inline-block
+		前面介绍对span设置display:block，形成块，那么display:inline-block不独占一行块属性，
+		同样可以让SPAN内容居中生效。这样可以让span并排同时设置宽度生效，
+		这样达到并排同时字体内容也可以设置居中。-->
+	<body>
+		万维网<span style="color:red; background-color:yellow">联盟</span>又称W3C理事会1994年10月在麻省理工学院计算机科学实验室成立。
+		<br>
+		<div>
+			万维网联盟又称<span>W3C理事会</span>1994年10月在麻省理工学院计算机科学实验室成立。
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>innerHTML和innerText的区别</title>
+	</head>
+	<body>
+		<div id="mydiv">
+			<span><a href="03_mouseover_out.html">我是链接</a></span>
+		</div>
+		<hr/>
+		<!--innerHTML和innerText区别-->
+		<input type="button" onclick="f1()" value="得到HTML">
+		<input type="button" onclick="f2()" value="得到Text">
+		<input type="button" onclick="f3()" value="设置HTML">
+		<input type="button" onclick="f4()" value="设置Text">
+		<script type="text/javascript">
+			// 得到div
+			var mydiv = document.getElementById("mydiv");
+			function f1(){
+				alert(mydiv.innerHTML);
+			}
+			function f2(){
+				alert(mydiv.innerText);
+			}
+			function f3(){
+				mydiv.innerHTML = "<h1 style='color: red'>大家好</h1>";
+			}
+			function f4(){
+				mydiv.innerText = "<h1 style='color: red'>大家好</h1>";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件介绍：得到焦点、失去焦点、改变事件</title>
+		<style type="text/css">
+			span{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		用户名：<input type="text" id="in"/> <span>请输入</span>
+		
+		<script type="text/javascript">
+			var span = document.getElementsByTagName("span")[0];
+			var input = document.getElementById("in");
+			input.onfocus = function(){
+				span.innerHTML = "正在输入";
+			}
+			input.onblur = function(){
+				span.innerHTML = "请输入";
+			}
+		</script>
+	</body>
+</html>

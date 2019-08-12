@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--1.在页面上创建一个span用于放置变化的数字。-->
+		<span id="sp">3</span>秒以后跳转
+		<script type="text/javascript">
+			// 2.定义一个全局变量为5，每过1秒调用1次自定义refresh()函数
+			var sp = document.getElementById("sp");
+			var num = sp.innerHTML;
+			setInterval(refresh,1000);
+			function refresh(){
+				if(num == 0){
+					location.href = "03_mouseover_out.html";
+				}
+				num--;
+				sp.innerHTML = num;
+			}
+		</script>
+	</body>
+</html>

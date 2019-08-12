@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<!--需要引入JQuery-->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<style>
+		nav.top a{
+			color: #999;
+		}
+		.redColor{
+			color: #c40000 !important;
+		}
+		nav.top{
+			background-color: #f2f2f2;
+			padding-top: 0.3125rem;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #e7e7e7;
+		}
+		nav.top span,nav.top a{
+			color: #999;
+			margin: 0px 10px 0px 10px;
+		}
+		nav.top a:hover{
+			color: #c40000;
+			text-decoration: none;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<nav class="top">
+				<a href="#">
+					<span class="glyphicon glyphicon-home redColor"></span>
+					京华首页
+				</a>
+				
+				<span>您好，欢迎来到京华！</span>
+				<a href="">请登录</a>
+				<a href="">免费注册</a>
+				
+				<span class="pull-right">
+					<a href="#">
+						<span class="glyphicon glyphicon-th-list redColor"></span>我的订单
+					</a>
+					<a href="#">
+					<span class="glyphicon glyphicon-shopping-cart redColor"></span>
+					购物车<strong>0</strong>件
+					</a>
+				</span>
+			</nav>
+		</div>
+	</body>
+</html>

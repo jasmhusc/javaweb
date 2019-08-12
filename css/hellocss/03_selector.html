@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+		/*层级选择器
+        格式: 父选择器 空格 子选择器
+        作用: 选中父选择器选中子孙元素*/
+        div li{
+        	color: deeppink;
+        }
+        /*属性选择器
+        标签名[属性名]*/
+        input[type]{
+        	background-color: blueviolet;
+        }
+        input[type=password]{
+        	background-color: chartreuse;
+        }
+		/*伪类选择器
+        格式: 标签名:状态
+        作用: 给指定标签的指定状态设置样式
+        a:link 正常
+        a:active 激活
+        a:visited 访问过的
+        a:hover 鼠标悬浮
+        注意:当设置了hover状态active就不起作用
+        input:focus: 获得焦点*/
+		a:link{
+			color: orange;
+		}
+		/* a:active{
+			color: red;
+		} */
+		a:visited{
+			color: black;
+		}
+		a:hover{
+			color: #FF1493;
+		}
+		input:focus{
+			background-color: aqua;
+		}
+		p,span{
+			color: darkblue;
+		}
+	</style>
+</head>
+<body>
+	<ol>
+		<li>红烧肉</li>
+		<li>东坡肉</li>
+	</ol>
+	<div>
+		<ul>
+			<li>水煮鱼</li>
+			<li>酸菜鱼</li>
+		</ul>
+	</div>
+	用户名：<input type="text"> <br>
+	密码：<input type="password"> <br>
+	qq：<input type="text"><br>
+	<hr>
+	
+	<a href="#1">这是链接1</a>
+	<a href="#2">这是链接2</a>
+	<a href="#3">这是链接3</a>
+	<a href="#4">这是链接4</a>
+	<a href="#5">这是链接5</a>
+	
+	<p>ddddd</p>
+	<span>ssss</span>
+</body>
+</html>

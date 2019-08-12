@@ -1,0 +1,35 @@
+div.searchDiv {
+	width: 416px;
+	height: 40px;
+	background-color: #FFC900;
+	margin: 15px auto;
+	padding: 1px;
+	display: block;
+}
+
+div.searchDiv input {
+	width: 276px;
+	height: 36px;
+	border: 1px solid transparent;
+	margin: 1px;
+	outline: none;
+}
+
+div.searchDiv button {
+	width: 132px;
+	border: 1px solid transparent;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background-color: #FFC900;
+}
+
+input::-webkit-input-placeholder {
+	color: #555;
+	font-size: 14px;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: #999;
+}
+

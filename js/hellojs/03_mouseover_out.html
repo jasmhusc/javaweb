@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标移入移出事件</title>
+	</head>
+	<body>
+		<img src="../img/0.jpg" id="img1" width="60%" />
+		<script type="text/javascript">
+			var img = document.getElementById("img1");
+			img.onmouseover = function(){
+				img.src = "../img/1.jpg";
+			}
+			img.onmouseout = function(){
+				this.src = "../img/0.jpg";
+			}
+		</script>
+	</body>
+</html>

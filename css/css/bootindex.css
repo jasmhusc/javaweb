@@ -1,0 +1,68 @@
+.wrap {
+	width: 97%;
+	margin-left: 20px;
+}
+
+.logo {
+	width: 24%;
+	float: left;
+	height: 60px;
+	text-align: center;
+}
+
+.amenu {
+	color: royalblue;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 60px;
+}
+
+.bmenu {
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	line-height: 50px;
+	text-align: center;
+	margin-right: 70px;
+}
+
+.advise {
+	float: left;
+	width: 22%;
+	text-align: center;
+	margin: 5px 16px;
+}
+
+.mark_pro {
+	float: left;
+	height: 80px;
+}
+
+.product {
+	float: left;
+	width: 22%;
+	text-align: center;
+	margin: 0px 10px;
+}
+
+.price {
+	color: red;
+	display: block;
+	text-align: center;
+}
+#lastdiv {
+	height: 50px;
+	background-color: #ffc900;
+	margin-top: 10px;
+	line-height: 50px;
+	text-align: center;
+}
+
+p {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 14px;
+	padding-right: 10px;
+}
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>内容改变事件</title>
+	</head>
+	<body>
+		<select id="is1">
+			<option value ="gz">广州</option>
+			<option value ="sz">深圳</option>
+			<option value ="dg">东莞</option>
+		</select>
+		<input type="text" id="it1"/>
+		<script type="text/javascript">
+			// 内容改变,弹框
+			document.getElementById("is1").onchange = function(){
+				alert(this.value);
+			}
+			// 内容改变,转为大写
+			document.getElementById("it1").onchange = function(){
+				this.value = this.value.toUpperCase();
+			}
+		</script>
+	</body>
+</html>

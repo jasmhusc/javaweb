@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Js点击事件</title>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="点击1" onclick="click01()"/>
+		<input type="button" id="btn2" value="点击2"/>
+		<input type="button" id="btn3" value="点击3" onclick="alert('代码点击事件')"/>
+		<input type="button" name="btn4" value="点击4" />
+		
+		<script type="text/javascript">
+			// 命名函数,在元素内部绑事件
+			function click01(){
+				alert("命名函数事件");
+			};
+			// 匿名函数,在js代码中绑定事件:根据id,返回一个元素
+			document.getElementById("btn2").onclick = function(){
+				alert("匿名点击事件，by id");
+			}
+			// 匿名函数,在js代码中绑定事件:根据name,注意返回的是数组
+			document.getElementsByName("btn4")[0].ondblclick = function(){
+				alert("匿名绑定事件，by name")
+			}
+		</script>
+	</body>
+</html>

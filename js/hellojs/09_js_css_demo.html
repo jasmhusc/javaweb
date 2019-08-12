@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			span {
+			    background-color: lightyellow;
+			    border: 1px dashed orange;
+			    border-radius: 3px;
+			    padding: 5px 10px 5px 10px;
+				font-family: 华文琥珀;
+				color: #c40000;
+			    display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="03_mouseover_out.html" onmouseover="show()" onmouseout="hide()">王者荣耀出新皮肤啦！</a><br/>
+		<span id="sp">点击有惊喜哦！</span>
+		<script type="text/javascript">
+			var sp = document.getElementById("sp");
+			function show(){
+				sp.style.display = "inline";
+			}
+			function hide(){
+				sp.style.display = "none";
+			}
+		</script>
+	</body>
+</html>

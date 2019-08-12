@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS操作CSS</title>
+		<style type="text/css">
+			.aa{
+				color: #FF0000;
+				font-family: monaco;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1">樱木花道</p>
+		<p id="p2">樱木花道</p>
+		
+		<input type="button" value="单次修改css" onclick="fun1()"/>
+		<input type="button" value="class修改css" onclick="fun2()"/>
+		
+		<script type="text/javascript">
+			function fun1(){
+				var p1 = document.getElementById("p1");
+				p1.style.color = "aqua";
+				p1.style.fontSize = "24px";
+				p1.style.fontFamily = "华文琥珀";
+			}
+			function fun2(){
+				var p2 = document.getElementById("p2");
+				p2.className = "aa";
+			}
+		</script>
+	</body>
+</html>

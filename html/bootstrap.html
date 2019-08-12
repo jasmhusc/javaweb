@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>旅游网</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<!-- 引入bootstrap头文件：全局css  jQuery  bootstrap-js  meta -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- 自己的css放在最后 -->
+		<link rel="stylesheet" type="text/css" href="css/bootindex.css" />
+		<link rel="stylesheet" type="text/css" href="css/myboot.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav-top.css" />
+	</head>
+	<body>
+		<!-- 整个页面，外层div -->
+		<div class="wrap container">
+			<!-- 第1部分 -->
+			<!-- 1.头 -->
+			<nav class="top">
+				<a href="#">
+					<span class="glyphicon glyphicon-home redColor"></span>
+					京华首页
+				</a>
+
+				<span>您好，欢迎来到京华！</span>
+				<a href="">请登录</a>
+				<a href="../css/register.html">免费注册</a>
+
+				<span class="pull-right">
+					<a href="#">
+						<span class="glyphicon glyphicon-th-list redColor"></span>我的订单
+					</a>
+					<a href="#">
+						<span class="glyphicon glyphicon-shopping-cart redColor"></span>
+						购物车<strong>0</strong>件
+					</a>
+				</span>
+			</nav>
+			<div>
+				<img src="img/product/top_banner.jpg" width="100%" />
+			</div>
+			<!-- 1.搜索栏 -->
+			<div>
+				<div class="logo">
+					<img src="img/logo.gif" />
+				</div>
+				<div style="600px">
+					<div class="searchDiv">
+						<form action="#">
+							<input type="text" placeholder="请输入路线名称" >
+							<button type="button">搜索</button>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			<div style="clear: left;"></div>
+			<!-- 1.导航栏 -->
+			<div style="box-sizing: content-box;background-color: #ffc900;height: 50px;text-align: center;">
+				<a href="divindex.html" class="bmenu">首页</a>
+				<a href="divindex.html" class="bmenu">门票</a>
+				<a href="divindex.html" class="bmenu">酒店</a>
+				<a href="divindex.html" class="bmenu">香港车票</a>
+				<a href="divindex.html" class="bmenu">出境游</a>
+				<a href="divindex.html" class="bmenu">国内游</a>
+				<a href="divindex.html" class="bmenu">港澳游</a>
+				<a href="divindex.html" class="bmenu">团队定制</a>
+				<a href="divindex.html" class="bmenu">全球自由行</a>
+				<a href="divindex.html" class="bmenu">收藏排行榜</a>
+			</div>
+			<!-- 1.轮播图 -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/product/banner_3.jpg" alt="...">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/product/banner_2.jpg" alt="...">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/product/banner_1.jpg" alt="...">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 第2部分 -->
+			<!-- 精选推荐 -->
+			<div style="margin-top: 10px;">
+				<img src="img/product/icon_5.jpg" />&nbsp;京华精选<br />
+				<hr color="orange" size="3" />
+			</div>
+			<div>
+				<div class="advise">
+					<img src="img/product/jingxuan_2.jpg" /> <br>
+					<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+					<span class="price">&yen;899</span>
+				</div>
+				<div class="advise">
+					<img src="img/product/jingxuan_14.jpg" /> <br>
+					<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+					<span class="price">&yen;899</span>
+				</div>
+				<div class="advise">
+					<img src="img/product/jingxuan_18.png" /> <br>
+					<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+					<span class="price">&yen;899</span>
+				</div>
+				<div class="advise">
+					<img src="img/product/jingxuan_19.jpg" /> <br>
+					<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+					<span class="price">&yen;899</span>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<!-- 内容1：国内游 -->
+			<div>
+				<img src="img/product/icon_6.jpg" />&nbsp;国内游<br />
+				<hr color="orange" size="3" />
+			</div>
+			<div>
+				<div class="mark_pro">
+					<img src="img/product/guonei_2.jpg" alt="命令的中国">
+				</div>
+				<div>
+					<div>
+						<div class="product">
+							<img src="img/product/jingxuan_1.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_15.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_3.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+					</div>
+					<div>
+						<div class="product" style="margin-left: 370px;">
+							<img src="img/product/jingxuan_4.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_5.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_6.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;height: 20px;"></div>
+			<!-- 内容1：国外游 -->
+			<div height="80px">
+				<img src="img/product/icon_7.jpg" />&nbsp;境外游<br />
+				<hr color="orange" size="3" />
+			</div>
+			<div>
+				<div class="mark_pro">
+					<img src="img/product/jingwai_2.jpg" alt="欧洲的风情">
+				</div>
+				<div>
+					<div>
+						<div class="product">
+							<img src="img/product/jingxuan_7.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_17.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_9.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+					</div>
+					<div>
+						<div class="product" style="margin-left: 370px;">
+							<img src="img/product/jingxuan_10.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_11.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+						<div class="product">
+							<img src="img/product/jingxuan_1.jpg" alt="">
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<span class="price">&yen;699</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第3部分 -->
+			<!-- 尾部 -->
+			<div style="clear: both;height: 20px;"></div>
+			<div>
+				<img src="img/product/footer_service.png" width="100%" />
+			</div>
+			<div id="lastdiv">
+				<span style="color: black;">北京京华亿家股份有限公司 版权所有Copyright 2006-2018, All Rights Reserved京ICP备16007882</span>
+			</div>
+		</div>
+	</body>
+</html>

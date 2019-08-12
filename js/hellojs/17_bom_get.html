@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>获取元素</title>
+	</head>
+	<body>
+		<input type="button" value="(通过tagName)给tr的奇数行添加背景色" onclick="fun1()">
+		<input type="button" value="(通过name)选中所有的商品" onclick="fun2()">
+		<input type="button" value="(通过class)给a添加链接" onclick="fun3()">
+		<hr/>
+		
+		<table border="1px" cellpadding="5px" cellspacing="0px">
+			<tr>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>200</td>
+				<td>200</td>
+				<td>200</td>
+			</tr>
+			<tr>
+				<td>300</td>
+				<td>300</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>400</td>
+				<td>400</td>
+				<td>400</td>
+			</tr>
+		</table>
+		<input type="checkbox" name="product">自行车
+		<input type="checkbox" name="product">电视机
+		<input type="checkbox" name="product">洗衣机
+		<hr/>
+		<a class="company">华为荣耀</a>
+		<br>
+		<a class="company">华为荣耀</a>
+		<br>
+		<a class="company">华为荣耀</a>
+		<br>
+		
+		<script>
+			function fun1(){
+				var trs = document.getElementsByTagName("tr");
+				for (var i = 0; i < trs.length; i++) {
+					if(i%2 != 0)
+						trs[i].style.backgroundColor = "#C40000";
+				}
+			}
+			function fun2(){
+				var products =  document.getElementsByName("product");
+				for (var i = 0; i < products.length; i++) {
+					products[i].checked = "checked";
+				}
+			}
+			function fun3(){
+				var as = document.getElementsByClassName("company");
+				for (var i = 0; i < as.length; i++) {
+					as[i].href = "#";
+				}
+			}
+		</script>
+	</body>
+</html>

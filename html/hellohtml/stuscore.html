@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			table: 表示表格,是一个容器.看不见,需要包含其他内容
+				width: 宽度
+				height: 高度
+				border: 表格的边框
+				align="center": 这个表格本身居中
+			tr: 表示表格中的一行
+				bgcolor: 背景颜色
+				align="center": 这一行的内容居中
+			
+			th: 表格列标题,加粗,居中
+			td: 普通的单元格
+				align="center": 这个单元格内容居中
+			
+			caption: 表格标题
+			
+			thead,tbody,tfoot: 对表格进行逻辑划分.并不显示
+			我们没有写tbody,默认会将所有的tr使用tbody包裹
+			-->
+		<!-- 表格table:5行4列 -->
+		<table width="500px" height="150px" align="center" cellpadding="5px" cellspacing="0" border="2px">
+			<caption>
+				<h2>学生成绩表</h2>
+			</caption>
+			<thead>
+				<tr>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>成绩</th>
+				</tr>
+			</thead>
+			<tbody align="center">
+				<tr>
+					<td>100</td>
+					<td>潘金莲</td>
+					<td>女</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>200</td>
+					<td>武大郎</td>
+					<td>男</td>
+					<td rowspan="2">90</td>
+				</tr>
+				<tr>
+					<td>300</td>
+					<td>武松</td>
+					<td>男</td>
+				</tr>
+			</tbody>
+			<tfoot align="center">
+				<tr>
+					<td>总成绩</td>
+					<td colspan="3">900</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

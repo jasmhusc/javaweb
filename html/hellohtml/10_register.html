@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 表单标签 
+		             action: 数据的提交地址
+					 method: 提交方式
+					        get 方式   默认提交方式  会将参数拼接在url链接后面  有大小限制 一般为4kb 不安全
+							post 方式   会将参数封装在请求体中  没有大小限制 安全
+					 enctype: 如果表单中有文件上传必须添加这个属性  指定属性为 "multipart/form-data" 用于文件转码
+				input: 
+				      type:  指定输入项的类型
+					       text : 文本
+						   password : 密码框
+						   radio : 单选按钮
+						   checkbox : 复选框
+						   file : 上传文件
+						   submit : 提交按钮
+						   button : 普通按钮
+						   reset : 重置按钮
+						   hidden : 隐藏域
+						   
+						   date : 日期类型
+						   tel : 手机号  手机再能有效果
+						   number : 只允许输入数字
+					  name:  在表单提交的时候，当作参数的名称
+					  id:    给输入项取一个名字，以便于后期查找和操作它
+					  placeholder:  指定提示信息
+					     加在属性后面
+					  disable: 禁用 
+					  readonly: 只读 相当于禁用
+					  checked: 加载按钮选项中 默认选中该选项
+				
+				textarea : 文本域
+				       cols : 列 指定宽度
+					   rows : 行 指定高度
+					   
+				select : 下拉列表
+				    option : 选择项
+							-->
+		<form action="../04-网站首页/网站首页案例.html" method="get" enctype="multipart/form-data">
+			<!-- 隐藏域  存放页面上的一些ID信息 
+			            表单提交时会携带一些信息到域名上
+						不需要用户查看和填写的信息
+						-->
+			<input type="hidden" name="uid" value="ashdhaushaihfah" />
+			<!-- 文本输入框 -->
+			用户名:<input type="text" name="username" id="hhhhh" placeholder="请输入用户名" /> <br />
+			<!-- 密码输入框 -->
+			密码: <input type="password" /> <br />
+			确认密码: <input type="password" /> <br />
+
+			<!-- 手机号  数字类型number  九宫格数字输入tel -->
+			邮箱: <input type="text" /> <br />
+			手机号码: <input type="text" /> <br />
+
+			<!-- 通过name="sex"实现单选 -->
+			性别: <input type="radio" name="sex" value="1" />男
+			<input type="radio" name="sex" value="0" />女 <br />
+
+			<!-- 选择列表 select 选项option-->
+			籍贯: <select name="address">
+				<option>请选择</option>
+				<option value="beijing">北京</option>
+				<option value="shanghai">上海</option>
+				<option value="wuhan">武汉</option>
+			</select> <br />
+
+			<!-- 出生日期  Date -->
+			出生日期: <input type="date" /> <br />
+
+			<!-- 通过checkbox实现多选 -->
+			爱好: <input type="checkbox" name="love" />音乐
+			<input type="checkbox" value="m" />电影
+			<input type="checkbox" value="s" />运动
+			<input type="checkbox" value="r" />阅读 <br />
+
+			<!-- 文件上传 file -->
+			图像: <input type="file" name="file" /> <br />
+			
+			<!--
+				H5新增的input标签type属性
+				type="date"： 日期控件
+				type="email"： 检测输入的内容是否是邮箱地址
+				type="color"：选择一个颜色
+				type="number"：只能输入数字-->
+			生日: <input type="date" /><br/>
+			邮箱: <input type="email" /><br/>
+			颜色：<input type="color" /><br>
+			数字：<input type="number"> <br>
+
+			<!-- 文本输入区 textarea -->
+			择偶要求: <textarea cols="40" rows="4"></textarea> <br/>
+			验证码: <input type="text" /> <br/>
+
+			<!-- 提交按钮 submit -->
+			<input type="submit" value="确定" />
+			<!-- 普通按钮 button -->
+			<input type="button" value="注册" />
+			<!-- 重置按钮 reset 重置列表内填写的所有内容-->
+			<input type="reset" value="重置" /> <br/>
+
+		</form>
+	</body>
+</html>

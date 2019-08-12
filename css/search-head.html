@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>搜索页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+	<style type="text/css">
+		div.logo {
+			font-size: 12px;
+		}
+
+		img#logo {
+			position: absolute;
+			left: 230px;
+			top: 30px;
+			z-index: -1;
+		}
+
+		div.searchDiv {
+			width: 416px;
+			height: 40px;
+			background-color: #C40000;
+			margin: 50px auto;
+			padding: 1px;
+			display: block;
+		}
+
+		div.searchDiv input {
+			width: 276px;
+			height: 36px;
+			border: 1px solid transparent;
+			margin: 1px;
+			outline: none;
+		}
+
+		div.searchDiv button {
+			width: 132px;
+			border: 1px solid transparent;
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			background-color: #C40000;
+		}
+
+		div.searchBelow {
+			margin-top: 4px;
+			margin-left: -20px;
+		}
+
+		div.searchBelow span {
+			color: #999;
+		}
+
+		div.searchBelow a {
+			padding: 0px 20px;
+			font-size: 14px;
+			color: #999;
+		}
+
+		div.searchBelow a:hover {
+			color: #C40000;
+			text-decoration: none;
+		}
+
+		input::-webkit-input-placeholder {
+			color: #555;
+			font-size: 12px;
+		}
+		input:focus::-webkit-input-placeholder {
+			color: #999;
+		}
+	</style>
+	<body>
+		<div class="logo">
+			<!-- 天猫gif -->
+			<a href="#">
+				<img src="img/logo.gif" alt="天猫" id="logo">
+			</a>
+			<!-- 搜索框+词语提示 -->
+			<div class="searchDiv">
+				<form action="#">
+					<input type="text" placeholder="时尚男鞋  太阳镜" name="keyword">
+					<button type="submit">搜索</button>
+				</form>
+				<!-- 子div：放置热门词汇，可以点击，用|隔开 -->
+				<div class="searchBelow">
+					<span>
+						<a href="#">平衡车</a><span>|</span>
+					</span><span>
+						<a href="#">扫地机器人</a><span>|</span>
+					</span><span>
+						<a href="#">原汁机</a><span>|</span>
+					</span><span>
+						<a href="#">冰箱</a><span>|</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div style="height:50px"></div>
+	</body>
+</html>
