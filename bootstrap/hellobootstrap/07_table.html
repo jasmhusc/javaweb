@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>table表格</title>
+</head>
+<body>
+<div class="container">
+<!--table:填满整个container
+    table-bordered:边框
+    table-striped:隔行换色
+    table-hover:鼠标悬停换色
+    -->
+    <table class="table table-bordered table-striped table-hover">
+    <!--可以自定义颜色：
+        active success info waring danger
+        -->
+        <tr>
+            <th class="active">编号</th>
+            <th>姓名</th>
+            <th class="success">性别</th>
+            <th>电话</th>
+        </tr>
+        <tr class="info">
+            <td>001</td>
+            <td>樱木花道</td>
+            <td>男</td>
+            <td>10086</td>
+        </tr>
+        <tr class="warning">
+            <td>002</td>
+            <td>流川枫</td>
+            <td>男</td>
+            <td>10087</td>
+        </tr>
+        <tr class="danger">
+            <td>003</td>
+            <td>赤木晴子</td>
+            <td>女</td>
+            <td>10088</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
